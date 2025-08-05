@@ -10,6 +10,10 @@ nav {
 .navHome {
     background-color: #99AF07;
 }
+.nav a {
+    color: #fff;
+}
+        
 a {
     color: aliceblue;
     text-decoration: none;
