@@ -1,90 +1,119 @@
-
+/* GENERAL STYLES */
 h1 {
     text-align: center;
-}
-nav {
-   
-    text-decoration: none;
-    background-color:  #99AF07;
-    color: aliceblue;
 }
 
 a {
     color: aliceblue;
     text-decoration: none;
 }
+
 ul {
     display: flex;
     padding: 20px;
     margin: 20px;
     list-style-type: none;
 }
+
 li {
     padding: 10px;
 }
+
 li:hover {
-    color:bisque;
+    color: bisque;
 }
+
+.img {
+    width: 50px;
+    height: auto;
+}
+
+.img2 {
+    width: 350px;
+}
+
+/* PARAGRAPH LAYOUT */
 .p1 {
     margin: 20px;
     padding: 15px;
     width: 60%;
 }
+
 .p2 {
+    margin: 20px;
     padding: 15px;
     width: 40%;
 }
+
+/* FLEX BOX WRAPPER */
 .boxes {
     display: flex;
     flex-direction: row;
 }
-.p2 {
 
-    margin: 20px;
-}
+/* TEXT SECTION */
 .explanations {
     margin: 20px;
     padding: 20px;
 }
-.nav2 {
-    background-color: yellow;
-    color: #000;
-}
-.nav ul li {
-    text-align: right;
-}
-.nav2 ul {
-    justify-content: center;
-}
-a {
-    color: #000;
-}
-.blue li: hover{
+
+/* COLOR HIGHLIGHT */
+.blueli:hover {
     color: blue;
 }
+
 .blueBox {
     background-color: blue;
     width: 300px;
     height: 300px;
     border: 1px solid #000;
 }
-.img {
-    width: 50px;
-    height: auto;
+
+/* ===========================
+   NAVIGATION STYLES
+=========================== */
+
+/* BASE NAV */
+nav {
+    background-color: #99AF07;
+    color: aliceblue;
 }
 
-/* NAVIGATION 4 */ /* NAVIGATION 5 */
+/* NAV2 */
+.nav2 {
+    background-color: yellow;
+    color: #000;
+}
+
+.nav2 ul {
+    justify-content: center;
+}
+
+.nav2 a {
+    color: #000;
+}
+
+/* NAV TEXT ALIGNMENT */
+.nav ul li {
+    text-align: right;
+}
+
+/* NAV FOURTH */
 .fourth {
     background-color: #fff;
 }
+
 .container {
     max-width: 1200px;
     margin: auto;
     padding: 10px;
 }
+
+/* NAV SUBMENU */
 nav li {
     position: relative;
 }
+
 .subMenu {
     position: absolute;
     left: 0;
@@ -97,23 +126,24 @@ nav li {
     margin-top: 20px;
     display: none;
 }
-nav li: hover > .subMenu {
+
+nav li:hover > .subMenu {
     display: flex;
     background-color: #233C67;
 }
+
+/* FIFTH NAV */
 .fifthContainer {
-    background-color: #4470AD; 
+    background-color: #4470AD;
     margin: 0;
     padding: 0;
 }
 
 /* MAIN NAVIGATION */
-/* Base nav styles */
 .main-nav {
     background-color: #222;
 }
 
-/* Base link styles */
 .main-nav li a {
     color: #fff;
     text-decoration: none;
@@ -121,26 +151,22 @@ nav li: hover > .subMenu {
     display: block;
 }
 
-/* Hover state */
-.main-nav li a: hover {
+.main-nav li a:hover {
     background-color: #333;
-    color: #99AF07; /* This now works! */
+    color: #99AF07;
 }
 
-/* Active state */
-.main-nav li a: active {
+.main-nav li a:active {
     background-color: #222;
     color: #fff;
 }
 
-/* Focus state (keyboard navigation) */
-.main-nav li a: focus {
+.main-nav li a:focus {
     outline: 2px solid #99AF07;
 }
 
-
 /* SIXTH NAVIGATION */
-nav .six {
+nav.six {
     background-color: #4470AD;
 }
 
@@ -151,24 +177,24 @@ nav.six li a {
     display: block;
 }
 
-nav.six li a: hover {
+nav.six li a:hover {
     color: orange;
 }
 
-nav.six li a: active {
+nav.six li a:active {
     color: yellow;
 }
-.img2 {
-    max-width: 350px;
-}
+
+/* ===========================
+   RESPONSIVE STYLES
+=========================== */
 @media screen and (max-width: 650px) {
     ul {
         flex-direction: column;
         text-align: center;
     }
+
     .boxes {
         flex-direction: column;
     }
-
 }
-    
