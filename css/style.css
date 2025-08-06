@@ -59,8 +59,8 @@ li:hover {
 a {
     color: #000;
 }
-.blueli:hover{
-    color:blue
+.blue li: hover{
+    color: blue;
 }
 .blueBox {
     background-color: blue;
@@ -97,7 +97,7 @@ nav li {
     margin-top: 20px;
     display: none;
 }
-nav li:hover > .subMenu {
+nav li: hover > .subMenu {
     display: flex;
     background-color: #233C67;
 }
@@ -122,25 +122,25 @@ nav li:hover > .subMenu {
 }
 
 /* Hover state */
-.main-nav li a:hover {
+.main-nav li a: hover {
     background-color: #333;
     color: #99AF07; /* This now works! */
 }
 
 /* Active state */
-.main-nav li a:active {
+.main-nav li a: active {
     background-color: #222;
     color: #fff;
 }
 
 /* Focus state (keyboard navigation) */
-.main-nav li a:focus {
+.main-nav li a: focus {
     outline: 2px solid #99AF07;
 }
 
 
 /* SIXTH NAVIGATION */
-nav.six {
+nav .six {
     background-color: #4470AD;
 }
 
@@ -151,14 +151,16 @@ nav.six li a {
     display: block;
 }
 
-nav.six li a:hover {
+nav.six li a: hover {
     color: orange;
 }
 
-nav.six li a:active {
+nav.six li a: active {
     color: yellow;
 }
-
+.img2 {
+    max-width: 350px;
+}
 @media screen and (max-width: 650px) {
     ul {
         flex-direction: column;
