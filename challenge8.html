@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenge 8</title>
+</head>
+    <style>
+        body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1.5em;
+  margin: 20px;
+  padding: 20px;
+}
+
+.img {
+  max-width: 200px;
+}
+
+ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+
+.main-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color:#4286F5;
+}
+
+.main-nav li {
+  list-style-type: none;
+  margin: 0 15px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-nav a:hover {
+  color: aquamarine;
+}
+
+/* HAMBURGER STYLE */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 2em;
+  padding: 10px;
+}
+#menu-toggle {
+  display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 500px) {
+  /* Show hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  /* Hide menu by default */
+  .main-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #4286F5;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  /* Show menu when checkbox is checked */
+  #menu-toggle:checked + .hamburger + ul {
+    max-height: 500px;
+    display: flex;
+  }
+
+  .main-nav li {
+    margin-bottom: 10px;
+    color: #4286F5;
+  }
+}
+@media (max-width: 700px) {
+  .img {
+    max-width: 100%;
+  }
+  p {
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 10px;
+  }
+}
+    </style>
+<body>
+
+    <nav class="main-nav">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <ul>
+            <li><a href="challenge1.html">Challenge 1</a></li>
+            <li><a href="challenge2.html">Challenge 2</a></li>
+            <li><a href="challenge3.html">Challenge 3</a></li>
+            <li><a href="challenge4.html">Challenge 4</a></li>
+            <li><a href="challenge5.html">Challenge 5</a></li>
+            <li><a href="challenge6.html">Challenge 6</a></li>
+            <li><a href="challenge7.html">Challenge 7</a></li>
+            <li><a href="challenge8.html">Challenge 8</a></li>
+        </ul>
+    </nav>
+
+    <p>The drop-down is visible now.</p>
+</body>
+</html>
