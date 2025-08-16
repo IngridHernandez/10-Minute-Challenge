@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenge 8</title>
+</head>
+    <style>
+        body {
+  margin: 0;
+  padding: 0;
+}
+.section1 {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    max-width:100%;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+}
+.plantrImage {
+    max-width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.aside {
+    max-width: 40%;
+}
+p {
+  font-size: 1.5em;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+h1, h2{
+   margin: 0 auto;
+   padding: 20px;
+   
+}
+.img {
+  max-width: 200px;
+}
+
+ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+
+.main-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color:#4286F5;
+}
+
+.main-nav li {
+  list-style-type: none;
+  margin: 0 0px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-nav a:hover {
+  color: aquamarine;
+}
+
+/* HAMBURGER STYLE */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 2em;
+  padding: 10px;
+}
+#menu-toggle {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .img {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .section1 {
+      flex-direction: column;
+  }
+  p {
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 10px;
+ }
+ 
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  /* Show hamburger */
+  .hamburger {
+    display: block;
+    background-color: #4286F5;
+    color: aliceblue;
+  }
+
+  /* Hide menu by default */
+  .main-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #4286F5;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+img {
+  margin-right: 10px;
+  padding: 30px;
+}
+
+  /* Show menu when checkbox is checked */
+  #menu-toggle:checked + .hamburger + ul {
+    max-height: 800px;
+    display: flex;
+  }
+
+  .main-nav li {
+    margin-bottom: 10px;
+    color: #4286F5;
+    padding: 10px;
+  }
+ 
+ .aside {
+    max-width: 100%;
+ }
+
+}
+
+    </style>
+<body>
+ 
+    <nav class="main-nav">
+    
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <ul>
+           <img src="images/favicon-32x32.png" alt="">
+            <li><a href="challenge1.html">Challenge 1</a></li>
+            <li><a href="challenge2.html">Challenge 2</a></li>
+            <li><a href="challenge3.html">Challenge 3</a></li>
+            <li><a href="challenge4.html">Challenge 4</a></li>
+            <li><a href="challenge5.html">Challenge 5</a></li>
+            <li><a href="challenge6.html">Challenge 6</a></li>
+            <li><a href="challenge7.html">Challenge 7</a></li>
+            <li><a href="challenge8.html">Challenge 8</a></li>
+            <li><a href="challenge9.html">Challenge 9</a></li>
+            <li><a href="challenge10.html">Challenge 10</a></li>
+             <li><a href="#">Challenge 11</a></li>
+        </ul>
+    </nav>
+
+    <h1>Adding Images of diffrent sizes</h1>
+
+   
+<section class="section1">
+        <div  class="p1">
+            <p>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nesciunt non quasi! Sed exercitationem quo fugit, placeat obcaecati animi quos dolorum eius sunt sit ea iste omnis, possimus dolores nesciunt?
+            </p>
+   
+        </div>
+<aside class="aside">   
+        <div  class="p2">
+           <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae perspiciatis consequuntur ex temporibus maiores tempore, earum rerum deserunt qui obcaecati. Pariatur porro nulla est in consectetur sit fugit similique quibusdam!
+           </p>
+        </div>
+
+        <p>I added four images, one of which is an SVG, and I noticed it's not accepting the chosen font. It does scale nicely</h3>
+
+</aside>  
+</section>  
+
+  
+ <div class="plantrImage">
+            <img src="images/plantrNewSVG.svg" alt="Logo SVG">
+            <p>This is SVG</p>
+            <img src="images/plantr34x48.png" alt="34x48 Plantr">
+            <p>This is 34x48</p>
+            <img src="images/plantr288x117.png" alt="288x17 Plantr">
+            <p>This is 288x117</p>
+            <img src="images/plantr178x250.png" alt="178x250">
+           <p> This is 178x250</p>
+        </div>
+
+
+</body>
+</html>
