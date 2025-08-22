@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    html, body {
+        height: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        place-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        list-style-type: none;
+        align-self: center;
+}
+    li {
+       border: 1px solid #ccc;
+       border-radius: 10px;
+       text-decoration: none;
+       max-width:100px;
+       padding: 10px;
+       background: #3ab44c;
+background: linear-gradient(90deg,rgba(58, 180, 76, 1) 0%, rgba(29, 145, 253, 1) 56%, rgba(252, 176, 69, 1) 100%);
+     }
+     a {
+        color: yellow;
+     }
+    li:hover {
+      background: #EEAECA;
+      background: radial-gradient(circle,rgba(238,       174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+color: blueviolet;
+     }
+    
+     hr {
+        border: #3ab44c;
+        border-style: groove;
+     }
+  
+      .spider {
+          position: fixed;
+          top: 0px;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          z-index: 9;
+          opacity: 0.1;
+          pointer-events: none;
+          object-fit: cover;
+          margin: 0 auto;
+      }
+    .spider-Logo {
+        width: 120px;
+        height: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        opacity: 0.7;
+        pointer-events: none;
+    }
+    .spider-Footer {
+        width: 50px;
+        height: 100%;
+        z-index: 1;
+        pointer-events: none;
+    }
+     
+/*Button Styles */
+     div.button {
+     background-color: transparent 100%;
+     text-align: center;
+     }
+
+.button {
+    justify-items: center;
+    margin: 0px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.bOne, .bTwo, .bThree, .bFour {
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:15px;
+}
+.bOne {
+   background-color: #443366;
+   border-radius: 20px;
+    justify-items: center;
+    align-items: center;
+}
+.bTwo {
+   background-color: #FF5733;
+   padding:  10px 30px;
+   border-radius:50px;
+}
+.bThree {
+    background-color: #33FF57;
+    padding: 10px 20px;
+    margin: 0;
+    border-radius: none;
+}
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+p {
+  text-align: center;
+  font-size: 1.7em;
+  margin: 0 20px;
+  padding-bottom: 20px;
+}
+
+.section1 {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 20px;
+    padding: 75px 20px 20px 20px;
+}
+.section img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+.section2 {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 20px;
+    padding: 20px 20px 20px 20px;
+}
+.section2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+@media screen and (max-width: 600px) {
+    .section1, .section2 {
+        grid-template-columns: 1fr;
+    }
+}
+    
+}
+
+</style>
+
+<body>
+    
+    <body id="page12">
+  
+    <nav class="main-nav">
+        <ul>
+            <li><a href="challenge1.html">One</a></li>
+            <li><a href="challenge2.html">Two</a></li>
+            <li><a href="challenge3.html">Three</a></li>
+            <li><a href="challenge4.html">Four</a></li>
+            <li><a href="challenge5.html">five</a></li>
+            <li><a href="challenge6.html">Six</a></li>
+            <li><a href="challenge7.html">Seven</a></li>
+            <li><a href="challenge8.html">Eight</a></li>
+            <li><a href="chappter9.html">Nine</a></li>
+            <li><a href="challenge10.html">Ten</a></li>
+            <li><a href="challenge11.html">Eleven</a></li>
+            <li><a href="challenge12.html">Twelve</a></li>
+            <li><a href="challenge13.html">Thirteen</a></li>
+        </ul>
+        <img class="spider-Logo" src="images/SpiderWeb2.svg" alt="Spider web">
+    </nav>
+    <img class="spider" src="images/SpiderWeb2.svg" alt="Spider Web">
+    <hr>
+
+    <h1>svg, nav, and buttons</h1>
+       <p> Today I added two svg's to the page. One in the navbar and one as a back ground image. </p>
+    
+    
+        <div class="button">
+            <button class="bOne">Hello</button>
+            <button class="bTwo">Hello</button>
+            <button class="bThree">Hello</button>
+            <button class="bFour">Hello</button>
+        </div>
+
+        <div class="section1">
+            <div>
+                <img src="images/apple-touch-icon.png" alt="">
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, sapiente modi? Quaerat temporibus pariatur ratione enim commodi consequatur culpa dolorem debitis nostrum aspernatur sunt in, saepe quia reiciendis, modi atque.</p>
+            </div>
+        </div>
+
+
+        <div class="section2">
+            <div><img src="images/pexels1.jpg" alt=""></div>
+            <div><img src="images/pexels2.jpg" alt=""></div>
+            <div><img src="images/pexels3.jpg" alt=""></div>
+
+        </div>
+    <footer>
+        &copy; 2025 Ingrid Hernnadez
+        
+    </footer>
+</body>
+</html>
