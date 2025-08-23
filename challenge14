@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 14</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Bitcount:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rochester&family=Stalemate&display=swap" rel="stylesheet">
+</head>
+<style>
+    body,html {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-color: #fff0f6;
+        flex-direction: column;
+    }
+
+    /*heart style */
+    .heart {
+        font-size: 50px;
+        position: absolute;
+        top: 25px;
+        left: -60px;
+        animation: moveRight 8s linear infinite, rotateHeart 2s linear infinite;
+        padding-top: 20px;
+        margin: 20px;
+        z-index: 100;
+    }
+ @keyframes moveRight {
+        0% {
+            left: -60px; 
+        }
+        100% {
+            left: 100vw;
+        }
+    }
+    @keyframes rotateHeart {
+        0% {
+            transform: rotate(0deg); 
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    img {
+        width: 100px;
+        height: auto;
+    }
+
+    /* Navigation Styles */
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+        top: 0;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        background: #fff0f6;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        gap: 10px;
+        align-self: center;
+    }
+    li {
+        align-self:center;
+         font-family: "Agu Display", serif;
+         font-optical-sizing: auto;
+         font-weight: 400;
+         font-style: normal;
+         font-variation-settings:
+         "MORF" 0;
+    }
+    .heartImg {
+        width: 50px;
+        height: auto;
+    }
+    
+ 
+    .cards {
+        max-width: 700px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        margin: 0 auto;
+        padding: 20px 20px 20px 20px;
+      
+        place-items: center;
+    }
+    .card {
+        margin-top: 0; /* Reset margin-top to avoid extra space */
+        padding-top: 90px; /* ensures h1 sits below fixed nav */
+        display: grid;
+        height: 300px;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 300px;
+        gap: 5px;
+        justify-content: center;
+        margin: 0;
+         text-align: center;
+         align-items: center;
+    }
+       
+   h1 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 50px;
+    margin-top: 50px;
+    top: 50px;
+    font-family: "Agu Display", serif;
+         font-optical-sizing: auto;
+         font-weight: 400;
+         font-style: normal;
+}
+    p {
+        text-align: center;
+        font-size: 1.5em;
+        padding: 20px; 
+        max-width: 700px;
+        margin: 0 auto;
+        font-family: "Agu Display", serif;
+         font-optical-sizing: auto;
+         font-weight: 400;
+         font-style: normal;
+        }
+        .card {
+            margin: auto; /* Center cards on mobile */
+text-align: center;
+margin: 20px;
+padding: 20px;
+}
+  
+    .card button {
+        align-self: flex-end;
+    }
+    button {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background-color: rgb(198, 48, 93);
+        color: white;
+        border: oldlace;
+        padding: 15px 10px;
+        margin: 20px;
+        border-radius: 30px;
+       align-items: flex-end;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #fff0f6;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        text-align: center;
+    }
+.footerImg {
+    width: 30px;
+    height: auto;
+
+}
+@media screen and (max-width: 600px) {
+    .main-nav {
+        position: fixed;
+        display: none;
+    }
+    ul {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .heart {
+        z-index: 100;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+    }
+   
+    h1 {
+        padding: 20px;
+        top: 70px;
+        z-index: 100;
+    }
+    p {
+        text-align: center;
+        font-size: 1.5em;
+    }
+}
+    
+
+</style>
+<body>
+    
+    <div class="banner">
+        <div class="heart">
+            <img src="images/SVGHeart1.svg" alt="">
+            <img src="images/SVGHeart2.svg" alt="">
+        </div>
+    </div>
+
+    <nav class="main-nav">
+       <ul>
+        <a href="#"><img  class="heartImg" src="images/SVGHeart1.svg" alt=""></a>
+        <li><a href="index.html"></a>Home</li>
+        <li>About</li>
+        <li>Gallery</li>
+        <li>Contact</li>
+        <li>Blog</li>
+       </ul>
+    </nav>
+
+   
+<container id="container">
+    <h1>Hearts</h1>
+    <p>Created new nav, used CSS animation to move hearts across the site. Added four cards with a button. Added custom font.</p>
+   
+
+    <div class="cards">
+        <div class="card"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, ut.</p><button>Sign Up</button></div>
+        <div class="card"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, ut.</p><button>Sign Up</button></div>
+        <div class="card"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, ut.</p><button>Sign Up</button></div>
+        <div class="card"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, ut.</p><button>Sign Up</button></div>
+    </div>
+
+    </container>
+
+    <footer>
+        <p>&copy;2025 
+            <img class="footerImg" src="images/SVGHeart2@3x.png" alt="">Ingrid Hernnadez</p>
+    </footer>
+</body>
+</html>
